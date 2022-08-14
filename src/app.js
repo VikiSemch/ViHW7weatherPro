@@ -24,7 +24,7 @@ function formatDate(timestapm) {
   return `${day}${hours}:${minutes}`;
 }
 function showCTD(response) {
-  console.log(response);
+ 
   let temperatureElement = document.querySelector("#temperature");
   let citynameElement = document.querySelector("#cityname");
   let descritionElement = document.querySelector("#descrition");
