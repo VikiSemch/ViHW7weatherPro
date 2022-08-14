@@ -47,17 +47,22 @@ temperatureElement.innerHTML = Math.round(Celsiustemperature);
 
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  temperatureElement.innerHTML = Math.round(Fahreheirtemperature);
+ let temperatureElement = document.querySelector("#temperature"); 
 CelsiusLink.classList.remove("active");
 FahrenheitLink.classList.add("active");
-let temperatureElement = document.querySelector("#temperature");
-  let Fahreheirtemperature = (Celsiustemperature * 9) / 5 + 32;
+let Fahreheirtemperature = (Celsiustemperature * 9) / 5 + 32;
+temperatureElement.innerHTML = Math.round(Fahreheirtemperature);
+
  }  
 function showCelsiusTemp(event) {
   event.preventDefault();
+  CelsiusLink.classList.remove("active");
+  FahrenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(Celsiustemperature);
 }
+
+let Celsiustemperature = null;
 
 function searchCity(cityname) {
   let apiKey = "435bb05a3bd8ac1e2c4d7c0df7d0cd4b";
@@ -71,7 +76,7 @@ function search(event) {
   searchCity(citynameInputElement.value);
 }
 searchCity("New York");
-let Celsiustemperature = null;
+
 
 let form = document.querySelector("#search-form");
 form.addEventListener("click", search);
