@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(218, 242, 249);
+}
+h1{
+  font-size:22px ;
+  color: grey;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 26px;
+}
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  margin-left: 15px;
+  padding: 10px;
+  
+}
+
+.weartherApp {
+  max-width: 500px;
+  margin: 20px auto;
+  margin-left: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 1px;
+}
+
+.Wearther-Info {
+  margin-bottom: 25px;
+  
+}
+.InfoW img{
+margin-right: 10px;
+height: 80px;
+width: 80px;
+}
+.InfoW.strong{
+font-size: 60px;
+line-height: 1;
+font-weight: 400;
+}
+.InfoW.units{
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+form {
+  display: block;
+  margin-top: 20px;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+}
+ul.HW{
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding:auto;
+  color: grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+small{
+  max-width: 500px;
+  margin: 10px auto;
+  margin-left: 10px;
+  padding: 10px;
+}
